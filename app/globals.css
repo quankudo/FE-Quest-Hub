@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 
 /* ========== CSS RESET ========== */
 
@@ -60,7 +61,8 @@ button {
   color: #37d4d9;
 }
 
-.bg-primary-color {
+.bg-primary-color,
+.bg-primary-hover:hover {
   background-color: #37d4d9;
 }
 
@@ -74,4 +76,18 @@ input[type="checkbox"]:checked::after {
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+@keyframes orbit-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Khi hover card, toàn bộ cụm icon + hai chấm xoay */
+.feature-card:hover .orbit {
+  animation: orbit-spin 1.2s ease-in-out;
 }
