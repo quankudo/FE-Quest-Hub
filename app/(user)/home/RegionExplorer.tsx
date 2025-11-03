@@ -9,8 +9,8 @@ const regions = [
     key: "bac",
     name: "Miền Bắc",
     desc: "Khám phá nét đẹp cổ kính, hùng vĩ của núi rừng và thủ đô ngàn năm văn hiến.",
-    image: "/images/north.jpg",
-    gradient: "from-blue-500 to-indigo-500",
+    image:
+      "https://img.freepik.com/free-photo/asian-woman-wearing-vietnam-culture-traditional-strawberry-garden-doi-ang-khang-chiang-mai-thailand_335224-754.jpg?ga=GA1.1.683130327.1761757025&semt=ais_hybrid&w=740&q=80",
     cities: [
       {
         name: "Hà Nội",
@@ -36,8 +36,8 @@ const regions = [
     key: "trung",
     name: "Miền Trung",
     desc: "Vẻ đẹp bình dị của biển xanh, cát trắng và những di sản văn hóa thế giới.",
-    image: "/images/central.jpg",
-    gradient: "from-yellow-500 to-orange-500",
+    image:
+      "https://img.freepik.com/free-photo/view-world-monument-celebrate-world-heritage-day_23-2151297145.jpg?ga=GA1.1.683130327.1761757025&semt=ais_hybrid&w=740&q=80",
     cities: [
       {
         name: "Đà Nẵng",
@@ -63,8 +63,8 @@ const regions = [
     key: "nam",
     name: "Miền Nam",
     desc: "Sức sống năng động, hiện đại cùng nét đẹp sông nước miền Tây hiền hòa.",
-    image: "/images/south.jpg",
-    gradient: "from-green-500 to-emerald-500",
+    image:
+      "https://img.freepik.com/free-photo/mountain-countryside-landmark-china-tourism_1417-191.jpg?ga=GA1.1.683130327.1761757025&semt=ais_hybrid&w=740&q=80",
     cities: [
       {
         name: "TP. Hồ Chí Minh",
@@ -102,18 +102,16 @@ const RegionExplorer = () => {
       />
 
       {/* Tabs */}
-      <div className="flex justify-center gap-4 mb-10">
+      <div className="flex justify-center gap-5 mb-10">
         {regions.map((r) => (
           <button
             key={r.key}
             onClick={() => setSelected(r.key)}
-            className={`px-6 py-2 rounded-full border-2 transition-all font-medium
+            className={`px-8 py-3 rounded-full transition-all font-medium shadow
               ${
                 selected === r.key
-                  ? "border-transparent bg-linear-to-r " +
-                    r.gradient +
-                    " text-white"
-                  : "border-gray-300 text-gray-700 hover:bg-gray-100"
+                  ? "bg-orange-50 text-orange-600"
+                  : "text-gray-700 hover:bg-gray-100"
               }`}
           >
             {r.name}

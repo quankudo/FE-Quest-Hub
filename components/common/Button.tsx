@@ -2,17 +2,20 @@ import React from "react";
 
 const Button = ({
   text,
+  isTypeSubmit,
   icon: Icon,
   notWidthFull, // ✅ alias "icon" thành "Icon"
   event,
 }: {
   text: string;
+  isTypeSubmit?: boolean;
   icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   notWidthFull?: boolean;
   event?: () => void;
 }) => {
   return (
     <button
+      type={`${isTypeSubmit ? "submit" : "button"}`}
       onClick={event}
       className={`
         relative overflow-hidden rounded-md border bg-orange-500

@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
         port: "", // cần có dòng này để Next.js nhận chính xác
         pathname: "/wp-content/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "img.freepik.com",
+        port: "",
+        pathname: "/**", // cho phép mọi đường dẫn dưới hostname này
+      },
     ],
   },
 };

@@ -125,13 +125,13 @@ export default function FeaturedDestinations() {
         <div className="absolute bottom-8 w-full flex justify-center gap-6 z-50">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 flex items-center justify-center rounded-full bg-white/80 hover:bg-white transition shadow"
+            className="w-12 h-12 flex items-center justify-center rounded-full text-orange-600 bg-white/80 hover:bg-white transition shadow"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             onClick={nextSlide}
-            className="w-12 h-12 flex items-center justify-center rounded-full bg-white/80 hover:bg-white transition shadow"
+            className="w-12 h-12 flex items-center justify-center rounded-full text-orange-600 bg-white/80 hover:bg-white transition shadow"
           >
             <ChevronRight size={24} />
           </button>

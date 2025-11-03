@@ -69,7 +69,7 @@ export default function FeaturedTours() {
           {/* Nút trái */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 z-20 p-3 bg-white rounded-full shadow hover:bg-gray-100 transition"
+            className="absolute left-4 z-20 p-3 text-orange-600 bg-white rounded-full shadow hover:bg-gray-100 transition"
           >
             <ChevronLeft size={28} />
           </button>
@@ -137,7 +137,7 @@ export default function FeaturedTours() {
           {/* Nút phải */}
           <button
             onClick={nextSlide}
-            className="absolute right-4 z-20 p-3 bg-white rounded-full shadow hover:bg-gray-100 transition"
+            className="absolute right-4 z-20 p-3 text-orange-600 bg-white rounded-full shadow hover:bg-gray-100 transition"
           >
             <ChevronRight size={28} />
           </button>
