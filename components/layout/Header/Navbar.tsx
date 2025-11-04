@@ -9,7 +9,7 @@ const navbars = [
   { name: "Địa điểm", href: "/places" },
   { name: "Tours", href: "/tours" },
   { name: "HomeStay", href: "/homestay" },
-  { name: "Tin tức", href: "/news" },
+  { name: "Blogs", href: "/blogs" },
   { name: "Hướng dẫn", href: "/guides" },
 ];
 
